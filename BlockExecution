@@ -1,0 +1,27 @@
+package basic;
+
+public class Basic {
+	
+	public long i=10L;
+	public static double d=12.0890;
+	
+	static
+	{
+		System.out.println("static block points from here..");
+	}
+	{
+		System.out.println("non static block");
+	}
+	public Basic(){
+		System.out.println("constructor loading..");
+	}
+
+	public static void main(String[] args) {
+		
+		System.out.println("in main method");
+		Basic b=new Basic();
+		System.out.println(b.i);
+		System.out.println(d);
+	}
+
+}
